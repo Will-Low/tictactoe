@@ -51,7 +51,7 @@ def conduct_turn(player, player_marker):
     check_for_win(board, player_marker)
 
 def place_marker(move_position, player_marker):
-    # Contains a security vulnerability
+    # Contains a security vulnerability. Can you spot it?
     if move_position == "1":
         board[0][0] = player_marker
     elif move_position == "2":
